@@ -23,6 +23,11 @@ mod_message_keyword = []
 for k in range(len(message_indices)):
     sum = message_indices[index1] + keyword_indices[index2]
 # if sum less than the len of alphabet, add to list, otherwise take mod then add to list
+    if sum < len(alphabet):
+        mod_message_keyword.append(sum)
+    elif sum >= len(alphabet):
+        mod_message_keyword.append(sum % len(alphabet))
+    index1 += 1
 # if index2 on last index of keyword, bring it back to zero
 # take the index from list mod message keyword to the variable alphabet
 # output for ciphertext/print the result
