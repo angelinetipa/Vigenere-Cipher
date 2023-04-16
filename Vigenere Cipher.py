@@ -1,5 +1,9 @@
+print("*" * 55)
 # a variable for alphabetical letters
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 # input for the plaintext and keyword, remove space and change to uppercase
+message = input("\n\033[3m\033[1m" "Message: \n> " "\033[0m").strip().upper()
+keyword = input("\n\033[3m\033[1m" "Key: \n> " "\033[0m").strip().upper()
 # list for message indices
 # find the index of each letter in message then add to list
 # list for keyword indices
