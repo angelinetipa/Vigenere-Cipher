@@ -37,3 +37,5 @@ print("\n\033[3m\033[1m" "Ciphertext: " "\033[0m")
 for p in range(len(mod_message_keyword)):
     mod_indices = alphabet[mod_message_keyword[p]]
 # output for ciphertext/print the result
+    print("\033[4m", mod_indices, end="") 
+print("\033[0m" "\n\n", end="*" * 55)
