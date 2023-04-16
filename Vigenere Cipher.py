@@ -10,7 +10,10 @@ message_indices = []
 for j in range(len(message)):
     message_indices.append(alphabet.find(message[j]))
 # list for keyword indices
+keyword_indices = []
 # find the index of each letter in message then add to list
+for i in range(len(keyword)):
+    keyword_indices.append(alphabet.find(keyword[i]))
 # list for mod of sum of message's and keyword's indices
 # for every message indices a keyword indices will add
 # if sum less than the len of alphabet, add to list, otherwise take mod then add to list
