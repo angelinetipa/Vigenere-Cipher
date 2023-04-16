@@ -32,5 +32,8 @@ for k in range(len(message_indices)):
     index2 += 1
     if index2 == len(keyword_indices):
         index2 -= len(keyword_indices)
+print("\n\033[3m\033[1m" "Ciphertext: " "\033[0m")     
 # take the index from list mod message keyword to the variable alphabet
+for p in range(len(mod_message_keyword)):
+    mod_indices = alphabet[mod_message_keyword[p]]
 # output for ciphertext/print the result
