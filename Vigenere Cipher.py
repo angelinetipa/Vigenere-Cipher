@@ -29,5 +29,8 @@ for k in range(len(message_indices)):
         mod_message_keyword.append(sum % len(alphabet))
     index1 += 1
 # if index2 on last index of keyword, bring it back to zero
+    index2 += 1
+    if index2 == len(keyword_indices):
+        index2 -= len(keyword_indices)
 # take the index from list mod message keyword to the variable alphabet
 # output for ciphertext/print the result
